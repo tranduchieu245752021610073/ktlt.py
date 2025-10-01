@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="KTLTB1.3"/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-14 02:15:15 CH"/>
+        <attribute name="created" value="QWRtaW47QURNSU47MjAyNS0wNS0xNDsxMjoxNjozMyBDSDsyMTEx"/>
+        <attribute name="edited" value="QWRtaW47QURNSU47MjAyNS0wNS0xNDswMjoxNToxNSBDSDsxOzIyMTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="f0" type="Integer" array="False" size=""/>
+            <declare name="f1" type="Integer" array="False" size=""/>
+            <declare name="fn" type="Integer" array="False" size=""/>
+            <output expression="&quot; Nh&#7853;p s&#7889; l&#432;&#7907;ng ph&#226;n t&#7917; t&#7915; fibonacci &quot;" newline="False"/>
+            <input variable="n"/>
+            <assign variable="f0" expression="0"/>
+            <assign variable="f1" expression="1"/>
+            <output expression="f0" newline="False"/>
+            <if expression="N&gt;1">
+                <then>
+                    <output expression="f1" newline="False"/>
+                    <for variable="i" start="3" end="n" direction="inc" step="1">
+                        <assign variable="fn" expression="f0+f1"/>
+                        <output expression="f1" newline="False"/>
+                        <assign variable="f0" expression="f1"/>
+                        <assign variable="f1" expression="fn"/>
+                    </for>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
