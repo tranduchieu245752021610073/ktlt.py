@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="DHKTLT"/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-14 09:47:20 SA"/>
+        <attribute name="created" value="QWRtaW47QURNSU47MjAyNS0wNS0xNDswODo0MTo0MyBTQTsyMTI0"/>
+        <attribute name="edited" value="QWRtaW47QURNSU47MjAyNS0wNS0xNDswOTo0NzoyMCBTQTsxOzIyMzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <output expression="&quot; Canh cua tam giac la : &quot;" newline="False"/>
+            <input variable="a"/>
+            <declare name="h" type="Integer" array="False" size=""/>
+            <output expression="&quot; Chieu cao tam giac la : &quot;" newline="False"/>
+            <input variable="h"/>
+            <declare name="S" type="Integer" array="False" size=""/>
+            <assign variable="S" expression="1/2*(a*h)"/>
+            <output expression="&quot; Dien tich tam giac la : &quot; &amp;S" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>
